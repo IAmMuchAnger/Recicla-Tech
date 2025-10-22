@@ -56,12 +56,16 @@ header {
 }
 
 body {
-  background-color: #49db7f;
+  background-color: #6ff19f;
+  h1 {
+      color: #00581b;
+      justify-self: center;
+  }
 }
 
 .panfleto {
   background-color: rgb(201, 255, 214);
-  margin: 20px;
+  margin: 5vh;
   padding: 20px;
   border-radius: 12px;
   display: flex;
@@ -73,7 +77,6 @@ body {
   .card {
       display: flex;
       flex-direction: column;
-
       justify-content: space-between;
   }
   .texto-card {
@@ -93,8 +96,8 @@ body {
       margin: 10px;
       height: 50px;
       img {
-          margin-left: 5px;
-          height: 30px;
+          margin-left: 1vw;
+          height: 6vh;
           
       }
       &:hover {
@@ -104,12 +107,45 @@ body {
   }
 }
 
+.dados {
+  width: 100%;
+  background-color: #ddffea;
+  display: flex;
+  justify-content: space-around;
+  padding: 5vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  h1 {
+      color: #0011ff;
+  }
+  p {
+      color: #00581b;
+  }
+}
+
+.how-to {
+  display: flex;
+  justify-content: space-around;
+  .mini-panfleto {
+      color: #00581b;
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(201, 255, 214);
+      margin: 5vh;
+      padding: 20px;
+      border-radius: 12px;
+      h3, h2 {
+          color: #0011ff;
+      }
+  }
+}
+
 footer {
   background-color: #00581b;
   display: flex;
   a, p {
       text-decoration: none;
-      color: #16A34A;
+      color: #1fe768;
       display: flex;
       flex-direction: column;
       font-size: medium;
@@ -129,48 +165,5 @@ footer {
       img {
           height: 5vh;
       }
-  }
-}
-.panfleto {
-  background-color: rgb(201, 255, 214);
-  margin: 20px;
-  padding: 20px;
-  border-radius: 12px;
-  display: flex;
-  img {
-    background-color: white;
-    border-radius: 10px;
-    margin-right: 15px;
-  }
-  .card {
-    display: flex;
-    flex-direction: column;
-
-    justify-content: space-between;
-  }
-  .texto-card {
-    display: block;
-  }
-  .botoes-card {
-    display: flex;
-  }
-  button {
-    display: flex;
-    align-items: center;
-    background-color: white;
-    border-radius: 5px;
-    padding: 10px;
-    color: blue;
-    border: solid blue;
-    margin: 10px;
-    height: 50px;
-    img {
-      margin-left: 5px;
-      height: 30px;
-    }
-    &:hover {
-      cursor: pointer;
-      background-color: rgb(186, 236, 255);
-    }
   }
 }
