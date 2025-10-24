@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #abffca;
+  color: #00581b;
+  padding: 2vh 2vw;
+  display: flex;
+  justify-content: space-between;
+}
+header .inicio {
+  display: flex;
+}
+header .inicio h3 {
+  align-self: center;
+  font-size: 25px;
+  margin: 0 2vw;
+}
+header .inicio img {
+  height: 50px;
+  width: 50px;
+  align-self: center;
+}
+header .fim {
+  display: flex;
+}
+header .fim ul {
+  display: flex;
+  padding: 10px 1vw;
+  font-size: 12px;
+  align-self: center;
+}
+header .fim ul li {
+  list-style: none;
+  margin: 10px 1vw;
+}
+header .fim ul li a {
+  color: #00581b;
+  text-decoration: none;
+}
+header .fim button {
+  background-color: #16a34a;
+  border-radius: 5px;
+  color: #abffca;
+  padding: 20px;
+  border: solid #00581b;
+  margin: 10px;
+}
+header .fim button:hover {
+  background-color: #1ba75a;
+}
+
+body {
+  background-color: #6ff19f;
+  color: #00581b;
+  justify-content: center;
+}
+body h1 {
+  justify-self: center;
+}
+
+.panfleto {
+  background-color: rgb(201, 255, 214);
+  margin: 2vh 2vw;
+  padding: 3vh 2vw;
+  border-radius: 12px;
+  display: flex;
+}
+.panfleto img {
+  background-color: white;
+  border-radius: 10px;
+}
+.panfleto .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.panfleto .texto-card {
+  display: block;
+  padding: 2vw;
+}
+.panfleto .botoes-card {
+  display: flex;
+}
+.panfleto button {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  padding: 2vh;
+  color: blue;
+  border: solid blue;
+  margin: 1vw;
+  height: 9vh;
+}
+.panfleto button img {
+  margin-left: 1vw;
+  height: 6vh;
+}
+.panfleto button:hover {
+  cursor: pointer;
+  background-color: rgb(186, 236, 255);
+}
+
+.dados {
+  width: 100%;
+  background-color: #ddffea;
+  display: flex;
+  justify-content: space-around;
+  padding: 5vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+.dados h1 {
+  color: #0011ff;
+}
+.dados p {
+  color: #00581b;
+}
+
+.relatos {
+  display: flex;
+  justify-content: space-between;
+}
+.relatos .nota {
+  background-color: #abffca;
+  color: #00581b;
+  border-radius: 12px;
+  margin: 5vh 5vw;
+  display: flex;
+  flex-direction: column;
+  padding: 3vh 2vw;
+  align-items: center;
+}
+.relatos .nota img {
+  width: 18vw;
+}
+
+.how-to {
+  display: flex;
+  justify-content: space-around;
+}
+.how-to .mini-panfleto {
+  color: #00581b;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(201, 255, 214);
+  margin: 5vh 5vw;
+  padding: 3vh 3vw;
+  border-radius: 12px;
+}
+.how-to .mini-panfleto h3,
+.how-to .mini-panfleto h2 {
+  color: #0011ff;
+}
+
+.final {
+  color: #00581b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5vw;
+}
+.final button {
+  background-color: white;
+  border-radius: 5px;
+  padding: 2vh;
+  color: blue;
+  border: solid blue;
+  margin: 1vw;
+  height: 9vh;
+  width: 14vw;
+}
+
+footer {
+  background-color: #00581b;
+  display: flex;
+}
+footer a,
+footer p {
+  text-decoration: none;
+  color: #1fe768;
+  display: flex;
+  flex-direction: column;
+  font-size: medium;
+}
+footer .footer-coluna {
+  display: block;
+  margin: 2vw;
+  width: 24%;
+}
+footer .logo {
+  display: flex;
+  align-items: center;
+  color: #abffca;
+}
+footer .sociais {
+  display: flex;
+}
+footer .sociais img {
+  height: 5vh;
+  width: 5vh;
+}
+
+.creditos {
+  background-color: #00581b;
+  color: #1fe768;
+  font-size: smaller;
+}
+
+@media screen and (max-width: 768px) {
+  .panfleto,
+  .botoes-card,
+  .relatos,
+  .how-to,
+  .sociais,
+  .logo,
+  header {
+    flex-direction: column;
+  }
+  .final button {
+    width: 24vw;
+  }
+  .how-to li,
+  .how-to h3,
+  .how-to h2,
+  .how-to p {
+    justify-self: center;
+  }
+  header .inicio,
+  header .fim {
+    justify-content: center;
+  }
+} /*# sourceMappingURL=style.css.map */
